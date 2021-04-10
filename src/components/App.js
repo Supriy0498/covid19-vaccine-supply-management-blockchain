@@ -44,7 +44,7 @@ class App extends Component {
   //loadData();
 
   return (
-  //  <NearMedCentres/>
+    // <NearMedCentres/>
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />
