@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Box Sizing & Round Corners */
+
+
+@keyframes buttonAnimation {
+    from { padding: 10px 20px; font-size: inherit; }
+    to   { padding: 15px 30px; font-size: 24px; }
+}
+
+.button {
+    margin: 1000px;
+    display: inline-block;
+    background: #fc3;
+    background: linear-gradient(rgb#fc3, #f91);
+    border: solid 1px #999;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: black;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.button:hover {
+    border-color: #888;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+    background: #f91;
+    background: linear-gradient(to top, rgb(207, 248, 194), rgb(97, 250, 118));
+    animation-name: buttonAnimation;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.alt-button {
+    background: radial-gradient(#fc3, #f91);
+}
+
+.alt-button:hover {
+    background: radial-gradient(#f91, #fc3);
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
