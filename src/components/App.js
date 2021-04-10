@@ -4,7 +4,8 @@ import Header from "./header/Header";
 import Medicalcenter from './medicalcenter.js';
 import Vprovider from './Vprovider';
 import BForm from './BForm';
-import Web3 from 'web3'
+import Web3 from 'web3';
+
 import { Vaccine_Benef_ABI, Vaccine_Benef_Address } from '../contractConfig'
 import {
   BrowserRouter as Router,
@@ -17,7 +18,6 @@ import {
 class App extends Component {
   render() {
     
-
   async function loadData()
   {
     console.log("here");

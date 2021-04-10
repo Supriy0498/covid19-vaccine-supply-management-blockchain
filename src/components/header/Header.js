@@ -13,7 +13,6 @@ import Medicalcenter from "../medicalcenter";
 import FormTabs from "../FormTabs";
 import Login from "../Login"
 
-
 const Header = () => {
 
   function changeBenefCompo(phoneNo) {

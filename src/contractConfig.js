@@ -1,4 +1,4 @@
-export const Vaccine_Benef_Address = '0xb64024C27A71cFD0B8B8473Ff1730598EfD32772';
+export const Vaccine_Benef_Address = '0x7BE406415DA3e51b553A925b94227bC4342B59B8';
 
 export const Vaccine_Benef_ABI = [
     {
