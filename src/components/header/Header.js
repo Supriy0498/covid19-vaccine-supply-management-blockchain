@@ -12,6 +12,7 @@ import BForm from '../BForm';
 import Medicalcenter from "../medicalcenter";
 import FormTabs from "../FormTabs";
 import Login from "../Login"
+import LoginBenef from "../LoginBenef"
 
 
 const Header = () => {
@@ -73,7 +74,7 @@ const Header = () => {
                 case 'Beneficiary':
                 return <FormTabs 
                 reg={compo}
-                log={<Login/>}
+                log={<LoginBenef/>}
                 />;
               }
             }
