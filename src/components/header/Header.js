@@ -11,6 +11,7 @@ import Vprovider from '../Vprovider';
 import BForm from '../BForm';
 import Medicalcenter from "../medicalcenter";
 import FormTabs from "../FormTabs";
+import Login from "../Login"
 
 
 const Header = () => {
@@ -62,17 +63,17 @@ const Header = () => {
                 case 'Medicial Center':
                 return <FormTabs 
                   reg={<Medicalcenter/>}
-                  log={<Vprovider/>}
+                  log={<Login/>}
                 />;
                 case 'Vaccine Provider':
                 return <FormTabs 
                 reg={<Vprovider/>}
-                log={<Vprovider/>}
+                log={<Login/>}
                 />;
                 case 'Beneficiary':
                 return <FormTabs 
                 reg={compo}
-                log={<BForm/>}
+                log={<Login/>}
                 />;
               }
             }

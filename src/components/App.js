@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Benefe from './benefe';
 import Header from "./header/Header";
 import Medicalcenter from './medicalcenter.js';
 import Vprovider from './Vprovider';
@@ -47,7 +46,6 @@ class App extends Component {
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />
-        <Route exact path="/beneFe" component={Benefe} />
         <Route exact path="/beneForm" component={BForm} />
         <Route exact path="/vaccPro" component={Vprovider} />
         <Route exact path="/MedCen" component={Medicalcenter} />
