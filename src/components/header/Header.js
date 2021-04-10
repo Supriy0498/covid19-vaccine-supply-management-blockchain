@@ -11,7 +11,9 @@ import Vprovider from '../Vprovider';
 import BForm from '../BForm';
 import Medicalcenter from "../medicalcenter";
 import FormTabs from "../FormTabs";
-import Login from "../Login"
+import VLogin from "../VLogin"
+import MLogin from "../MLogin"
+import LoginBenef from "../LoginBenef"
 
 const Header = () => {
 
@@ -35,13 +37,13 @@ const Header = () => {
         </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-          <Link onClick={() => {setItem('Beneficiary'); setOpenPopup(true)}}>Beneficiary</Link>
+          <Link style={{ textDecoration: 'none' }} onClick={() => {setItem('Beneficiary'); setOpenPopup(true)}}>Beneficiary</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-          <Link onClick={() => {setItem('Vaccine Provider'); setOpenPopup(true)}}>Vaccine Provider</Link>
+          <Link style={{ textDecoration: 'none' }} onClick={() => {setItem('Vaccine Provider'); setOpenPopup(true)}}>Vaccine Provider</Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-          <Link onClick={() => {setItem('Medicial Center'); setOpenPopup(true)}}>Medicial Center</Link>
+          <Link style={{ textDecoration: 'none' }} onClick={() => {setItem('Medicial Center'); setOpenPopup(true)}}>Medicial Center</Link>
           </li>
         </ul>
       </div>  
@@ -62,17 +64,17 @@ const Header = () => {
                 case 'Medicial Center':
                 return <FormTabs 
                   reg={<Medicalcenter/>}
-                  log={<Login/>}
+                  log={<MLogin/>}
                 />;
                 case 'Vaccine Provider':
                 return <FormTabs 
                 reg={<Vprovider/>}
-                log={<Login/>}
+                log={<VLogin/>}
                 />;
                 case 'Beneficiary':
                 return <FormTabs 
                 reg={compo}
-                log={<Login/>}
+                log={<LoginBenef/>}
                 />;
               }
             }
