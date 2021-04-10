@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+<h1 align="center">Hack36 Template Readme</h1>
+<p align="center">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
 
-## Available Scripts
 
-In the project directory, you can run:
+## Introduction:
+**Project Title**: Covid19 Vaccine Supply Management using Blockchain.  
 
-### `npm start`
+**Problem Statement:** In the context of current Covid-19 pandemic, Rapid rollout of a vaccine and the implementation of a worldwide immunization campaign is critical for the control of the pandemic. Preparing and planning for mass immunization becomes extremely important. Nevertheless, there are several aspects that are likely to affect the success of COVID-19 immunization program if they are not properly addressed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1.Availability of an operational and transparent end-to-end supply chain and logistics systems.    
+2.Its role is on one hand to assure the vaccine storage and stock management and on the other hand the rigorous temperature control in the cold chain.    
+3.Transparency and correctness in the registration and management of the waiting list of people for immunization.    
+4.Building trust in vaccine by implementing a transparent and public reporting systems of potential side effects including the automatic tracing back up vaccine lot level.   
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Our Solution:** A blockchain-based system for transparent and correct tracing of COVID-19 vaccine registration, storage and delivery, and side effects self-reporting.
+Our Blockchain based solution will offer:
 
-### `npm test`
+1.This decentralized smart contracts-based monitoring solution will assuring proper vaccine transportation conditions in a cold chain and real time awareness of all peers in relation to the fulfillment of COVID-19 vaccine delivery and storage conditions.    
+2.This blockchain based solution will provide data immutability, transparency and correctness of beneficiary registration for vaccination, eliminating identity thefts and impersonations.    
+3.Our blockchain solution will provide vaccine administration and transparent and tamper proof self-reporting of side effects, person identification and vaccine association.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  
+## Demo Video Link:
+  <a href="https://youtu.be/dQw4w9WgXcQ">https://youtu.be/dQw4w9WgXcQ</a>
+  
+## Presentation Link:
+  <a href="https://docs.google.com/presentation/d/1cULLHCoj8k_nFx5B7N8_AFE58hB9QikAwY7cyJCi0FI/edit?usp=sharing"> ppt link here </a>
+  
+  
+## Table of Contents:
 
-### `npm run build`
+## Technology Stack:
+  1)React (Javascript,HTML,CSS)
+  2)Ethereum Smart Contracts
+  3)Solidity
+  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributors:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Team Name: OP Squad
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [Atharva Kale](https://github.com/atharvakale31)
+* [Diksha Rajguru](https://github.com/diksharajguru)
+* [Muskan Agarwal](https://github.com/muskan-1234)
+* [Supriy Jinturkar](https://github.com/Supriy0498)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Made at:
+<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a> 
