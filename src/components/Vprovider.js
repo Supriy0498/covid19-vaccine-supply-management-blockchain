@@ -101,6 +101,19 @@ export default function Vprovider() {
                 autoComplete="lname"
               />
             </Grid>
+
+            <Grid item xs={12} sm={6}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="lastName"
+                label="Password"
+                type="password"
+                name="lastName"
+                autoComplete="lname"
+              />
+            </Grid>
             
           </Grid>
           <Button
