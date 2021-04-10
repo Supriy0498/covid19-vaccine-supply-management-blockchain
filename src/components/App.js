@@ -5,6 +5,7 @@ import Medicalcenter from './medicalcenter.js';
 import Vprovider from './Vprovider';
 import BForm from './BForm';
 import Web3 from 'web3'
+import Appoint from './Appoint'
 import { Vaccine_Benef_ABI, Vaccine_Benef_Address } from '../contractConfig'
 import {
   BrowserRouter as Router,
@@ -13,6 +14,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import NearMedCentres from './NearMedCentres';
 
 class App extends Component {
   render() {
@@ -43,6 +45,7 @@ class App extends Component {
   //loadData();
 
   return (
+  //  <NearMedCentres/>
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />
