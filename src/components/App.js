@@ -4,13 +4,8 @@ import Header from "./header/Header";
 import Medicalcenter from './medicalcenter.js';
 import Vprovider from './Vprovider';
 import BForm from './BForm';
-<<<<<<< HEAD
-import Web3 from 'web3'
-import Appoint from './Appoint'
-=======
 import Web3 from 'web3';
 
->>>>>>> 6438ebdd4a121ed3c8b5e7c3100a21d213a1788e
 import { Vaccine_Benef_ABI, Vaccine_Benef_Address } from '../contractConfig'
 import {
   BrowserRouter as Router,
