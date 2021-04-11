@@ -30,6 +30,7 @@ const Header = () => {
   const closeMobileMenu = () => setClick(false);
   const [openPopup, setOpenPopup] = useState(false);
   return (
+    <div>
     <div className="header">
       
      
@@ -87,6 +88,12 @@ const Header = () => {
         </Popup>
         
     </div>
+    {/* <div> 
+      <img style={{height:'500px',width:'500px'}} href="https://images.transparencycdn.org/images/COVID-19-vaccine-transparency-feature.jpg"></img>
+      
+     </div> */}
+    </div>
+
   );
 };
 

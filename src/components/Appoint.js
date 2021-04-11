@@ -1,10 +1,33 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import {useHistory} from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
 
-
-
-
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    marginTop: theme.spacing(8),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: '100%',
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
 export default function Appoint() {
+
+  const classes = useStyles();
+  const history = useHistory();
+
     return (
         <div>
         <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251" />
@@ -79,6 +102,19 @@ export default function Appoint() {
          
          
         </form>
+        <div style={{textAlign:'center'}}>
+        <Button
+            type="button"
+            variant="contained"
+            color="primary"
+            size="medium"
+            className={classes.submit}
+            onClick = {()=>history.push("/medCen")}
+          >
+            Search Near by Medical Centers
+          </Button>
+        </div>
+
       </div>
     );
 }

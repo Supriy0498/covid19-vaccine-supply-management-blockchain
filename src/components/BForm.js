@@ -48,9 +48,6 @@ export default function BForm(props) {
     var vaccineBenef = new web3.eth.Contract(Vaccine_Benef_ABI,Vaccine_Benef_Address)
     console.log(vaccineBenef);
 
-    const benefCnt = await vaccineBenef.methods.getBenefCnt().call()
-    console.log(benefCnt);
-
     vaccineBenef.methods.addBenef(benefInfo.name,benefInfo.aadhaarNo,benefInfo.phoneNo,benefInfo.age).send({from: accounts[0],gas:3000000}, function(error, result){
       if(error)
       console.log("err "+error);

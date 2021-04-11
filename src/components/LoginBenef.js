@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useHistory} from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -48,6 +49,31 @@ export default function Login() {
   const [adhnext, setadhnext] = useState(true);
   const [otpnext, setOtpnext] = useState(false);
 
+  const [benefCreds,setBenefCreds] = useState({
+    name:"",aadhaarNo:"",phoneNo:0,age:0
+  })
+  const history = useHistory();
+
+  async function login(e)
+  {
+    history.push("/benef")
+    // var web3 = new Web3("http://localhost:7545");
+    // const accounts = await web3.eth.getAccounts()
+    // console.log("---"+accounts);
+
+    // var vaccineBenef = new web3.eth.Contract(Vaccine_Benef_ABI,Vaccine_Benef_Address)
+    // console.log(vaccineBenef);
+
+    // vaccineBenef.methods.addBenef(benefInfo.name,benefInfo.aadhaarNo,benefInfo.phoneNo,benefInfo.age).send({from: accounts[0],gas:3000000}, function(error, result){
+    //   if(error)
+    //   console.log("err "+error);
+    //   else{
+    //     console.log("res");
+    //     console.log(result);
+    //   }
+    // })
+  }
+
   function handleOTP(e){
 
     e.preventDefault();
@@ -68,6 +94,7 @@ export default function Login() {
     e.preventDefault();
     if(otpVal == otpnum){
         alert("Good " + phno);
+        login();
     }else{
         alert("Bad");
     }
