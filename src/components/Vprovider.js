@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Web3 from 'web3'
+import { Vaccine_Provider_ABI, Vaccine_Provider_Address } from '../contractConfig'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -36,6 +38,37 @@ const useStyles = makeStyles((theme) => ({
 export default function Vprovider() {
   const classes = useStyles();
 
+  const [providerInfo,setProviderInfo] = useState({
+    name:"",location:"",vaccineLots:0,fTemp:0,rTemp:0,maxDays:0,pwd:""
+  })
+
+  async function loadData(e)
+  {
+    var web3 = new Web3("http://localhost:7545");
+    const accounts = await web3.eth.getAccounts()
+    console.log("---"+accounts);
+
+    var vaccineProvider = new web3.eth.Contract(Vaccine_Provider_ABI,Vaccine_Provider_Address)
+    console.log(vaccineProvider);
+
+    const benefCnt = await vaccineProvider.methods.getProviderCnt().call()
+    console.log(benefCnt);
+
+    vaccineProvider.methods.addProvider(providerInfo.name,providerInfo.location,parseInt(providerInfo.vaccineLots),parseInt(providerInfo.fTemp),parseInt(providerInfo.rTemp),parseInt(providerInfo.maxDays),providerInfo.pwd).send({from: accounts[0],gas:3000000}, function(error, result){
+      if(error)
+      console.log("err "+error);
+      else{
+        console.log("res");
+        console.log(result);
+      }
+    })
+  }
+
+  function handleChange(event) {
+    providerInfo[event.target.name] = event.target.value
+    setProviderInfo(providerInfo)
+  }
+
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -45,13 +78,14 @@ export default function Vprovider() {
             <Grid item xs={12} sm={6}>
               <TextField
                 autoComplete="fname"
-                name="firstName"
+                name="name"
                 variant="outlined"
                 required
                 fullWidth
                 id="firstName"
                 label="Name"
                 autoFocus
+                onChange={handleChange}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -61,9 +95,23 @@ export default function Vprovider() {
                 fullWidth
                 id="lastName"
                 label="Manufacture Location"
-                name="lastName"
+                name="location"
                 autoComplete="lname"
+                onChange={handleChange}
               />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                  autoComplete="fname"
+                  name="vaccineLots"
+                  variant="outlined"
+                  required
+                  fullWidth
+                  id="vaccineLots"
+                  label="Vaccine Lots"
+                  autoFocus
+                  onChange={handleChange}
+                />
             </Grid>
 
             <Grid item xs={12} sm={6}>
@@ -73,8 +121,9 @@ export default function Vprovider() {
                 fullWidth
                 id="lastName"
                 label="Freezer Temp"
-                name="lastName"
+                name="fTemp"
                 autoComplete="lname"
+                onChange={handleChange}
               />
             </Grid>
 
@@ -85,8 +134,9 @@ export default function Vprovider() {
                 fullWidth
                 id="lastName"
                 label="Refrigerator Temp"
-                name="lastName"
+                name="rTemp"
                 autoComplete="lname"
+                onChange={handleChange}
               />
             </Grid>
 
@@ -97,8 +147,9 @@ export default function Vprovider() {
                 fullWidth
                 id="lastName"
                 label="Max Storage Days"
-                name="lastName"
+                name="maxDays"
                 autoComplete="lname"
+                onChange={handleChange}
               />
             </Grid>
 
@@ -110,19 +161,20 @@ export default function Vprovider() {
                 id="lastName"
                 label="Password"
                 type="password"
-                name="lastName"
+                name="pwd"
                 autoComplete="lname"
+                onChange={handleChange}
               />
             </Grid>
             
           </Grid>
           <Button
-            type="submit"
+            type="button"
             fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}
-            onClick={() => alert('hello')}
+            onClick={() => loadData()}
           >
             Submit
           </Button>
