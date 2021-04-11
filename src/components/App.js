@@ -14,6 +14,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import NearMedCentres from './NearMedCentres';
 
 class App extends Component {
   render() {
@@ -43,6 +44,7 @@ class App extends Component {
   //loadData();
 
   return (
+    // <NearMedCentres/>
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />

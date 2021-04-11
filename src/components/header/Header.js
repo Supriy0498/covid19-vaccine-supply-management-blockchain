@@ -14,6 +14,8 @@ import FormTabs from "../FormTabs";
 import VLogin from "../VLogin"
 import MLogin from "../MLogin"
 import LoginBenef from "../LoginBenef"
+import '../style.css'
+import '../normalize.css'
 
 const Header = () => {
 
@@ -29,31 +31,33 @@ const Header = () => {
   const [openPopup, setOpenPopup] = useState(false);
   return (
     <div className="header">
+      
+     
       <div className="logo-nav">
         <div className="logo-container">
           <a href="#">
             <Logo className="logo" />
           </a>
         </div>
-        <ul className={click ? "nav-options active" : "nav-options"}>
-          <li className="option" onClick={closeMobileMenu}>
+        <ul>
+          <li className="button" onClick={closeMobileMenu}>
           <Link style={{ textDecoration: 'none' }} onClick={() => {setItem('Beneficiary'); setOpenPopup(true)}}>Beneficiary</Link>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="button" onClick={closeMobileMenu}>
           <Link style={{ textDecoration: 'none' }} onClick={() => {setItem('Vaccine Provider'); setOpenPopup(true)}}>Vaccine Provider</Link>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="button" onClick={closeMobileMenu}>
           <Link style={{ textDecoration: 'none' }} onClick={() => {setItem('Medicial Center'); setOpenPopup(true)}}>Medicial Center</Link>
           </li>
         </ul>
       </div>  
-      <div className="mobile-menu" onClick={handleClick}>
+      {/* <div className="mobile-menu" onClick={handleClick}>
         {click ? (
           <CloseMenu className="menu-icon" />
         ) : (
           <MenuIcon className="menu-icon" />
         )}
-      </div>
+      </div> */}
 
       <Popup 
         title = {currentItem}
