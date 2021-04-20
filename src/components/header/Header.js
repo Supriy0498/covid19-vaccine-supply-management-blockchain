@@ -16,6 +16,7 @@ import MLogin from "../MLogin"
 import LoginBenef from "../LoginBenef"
 import '../style.css'
 import '../normalize.css'
+import Homepage from "../homepage/Homepage";
 
 const Header = () => {
 
@@ -92,6 +93,7 @@ const Header = () => {
       <img style={{height:'500px',width:'500px'}} href="https://images.transparencycdn.org/images/COVID-19-vaccine-transparency-feature.jpg"></img>
       
      </div> */}
+     <Homepage />
     </div>
 
   );
