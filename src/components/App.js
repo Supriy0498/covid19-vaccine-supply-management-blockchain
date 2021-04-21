@@ -5,6 +5,7 @@ import Medicalcenter from './medicalcenter.js';
 import Vprovider from './Vprovider';
 import BForm from './BForm';
 import Appoint from './Appoint';
+import Request from './Request';
 import Web3 from 'web3';
 
 import { Vaccine_Benef_ABI, Vaccine_Benef_Address } from '../contractConfig'
@@ -21,7 +22,7 @@ class App extends Component {
   render() {
 
   return (
-    // <NearMedCentres/>
+   //  <Request/>
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />
