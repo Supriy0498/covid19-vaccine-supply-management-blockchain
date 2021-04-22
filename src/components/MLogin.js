@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Web3 from 'web3'
+import {useHistory} from 'react-router-dom';
 import { Medical_Center_ABI, Medical_Center_Address } from '../contractConfig'
 
 const useStyles = makeStyles((theme) => ({
@@ -36,23 +37,25 @@ export default function MLogin() {
   const [centerCreds,setCenterCreds] = useState({
     name:"",pwd:""
   })
+  const history = useHistory();
 
   async function loadData(e)
   {
-    var web3 = new Web3("http://localhost:7545");
-    const accounts = await web3.eth.getAccounts()
+    history.push("/medicalCenter")
+    // var web3 = new Web3("http://localhost:7545");
+    // const accounts = await web3.eth.getAccounts()
 
-    var medicalCenter = new web3.eth.Contract(Medical_Center_ABI,Medical_Center_Address)
-    console.log(medicalCenter);
+    // var medicalCenter = new web3.eth.Contract(Medical_Center_ABI,Medical_Center_Address)
+    // console.log(medicalCenter);
 
-    medicalCenter.methods.checkCenterPwd(centerCreds.name,centerCreds.pwd).send({from: accounts[0],gas:3000000}, function(error, result){
-      if(error)
-      console.log("err "+error);
-      else{
-        console.log("res");
-        console.log(result);
-      }
-    })
+    // medicalCenter.methods.checkCenterPwd(centerCreds.name,centerCreds.pwd).send({from: accounts[0],gas:3000000}, function(error, result){
+    //   if(error)
+    //   console.log("err "+error);
+    //   else{
+    //     console.log("res");
+    //     console.log(result);
+    //   }
+    // })
   }
 
   function handleChange(event) {

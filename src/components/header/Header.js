@@ -9,7 +9,7 @@ import Home from "../Home";
 import { Button } from "@material-ui/core";
 import Vprovider from '../Vprovider';
 import BForm from '../BForm';
-import Medicalcenter from "../medicalcenter";
+import MedicalCenterReg from "../medicalcenterReg";
 import FormTabs from "../FormTabs";
 import VLogin from "../VLogin"
 import MLogin from "../MLogin"
@@ -69,7 +69,7 @@ const Header = () => {
             switch(currentItem) {
                 case 'Medicial Center':
                 return <FormTabs 
-                  reg={<Medicalcenter/>}
+                  reg={<MedicalCenterReg/>}
                   log={<MLogin/>}
                 />;
                 case 'Vaccine Provider':

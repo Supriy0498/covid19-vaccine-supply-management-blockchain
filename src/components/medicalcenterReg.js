@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Medicalcenter() {
+export default function MedicalCenterReg() {
   const classes = useStyles();
 
   const [centerInfo,setCenterInfo] = useState({

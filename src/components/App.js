@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from "./header/Header";
-import Medicalcenter from './medicalcenter.js';
+import MedicalCenterReg from './MedicalCenterHome';
 import Vprovider from './Vprovider';
 import BForm from './BForm';
 import Appoint from './Appoint';
@@ -16,18 +16,22 @@ import {
   Redirect
 } from "react-router-dom";
 import NearMedCentres from './NearMedCentres';
+import RequestVaccineLot from './RequestVaccineLot';
+import VaccineDose from './VaccineDose';
 
 class App extends Component {
   render() {
 
   return (
-    // <NearMedCentres/>
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />
         <Route exact path="/medCen" component={NearMedCentres} />
         <Route exact path="/benef" component={Appoint} />
         <Route exact path="/vaccPro" component={Vprovider} />
+        <Route exact path="/medicalCenter" component={MedicalCenterReg} />
+        <Route exact path="/requestVaccine" component={RequestVaccineLot} />
+        <Route exact path="/vaccineDose" component={VaccineDose} />
       </Switch>
     </Router>
   );
