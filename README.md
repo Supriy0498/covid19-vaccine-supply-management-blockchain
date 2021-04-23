@@ -1,7 +1,5 @@
 
 
-<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
-
 
 ## Introduction:
 **Project Title**: Covid19 Vaccine Supply Management using Blockchain.  
@@ -19,13 +17,6 @@ Our Blockchain based solution will offer:
 1.This decentralized smart contracts-based monitoring solution will assuring proper vaccine transportation conditions in a cold chain and real time awareness of all peers in relation to the fulfillment of COVID-19 vaccine delivery and storage conditions.    
 2.This blockchain based solution will provide data immutability, transparency and correctness of beneficiary registration for vaccination, eliminating identity thefts and impersonations.    
 3.Our blockchain solution will provide vaccine administration and transparent and tamper proof self-reporting of side effects, person identification and vaccine association.  
-
-  
-## Demo Video Link:
-  <a href="https://drive.google.com/drive/folders/1PGiY-M3RrQGEFyB43G-qz2BsjMqefI1d?usp=sharing">Demo Video</a>
-  
-## Presentation Link:
-  <a href="https://docs.google.com/presentation/d/1cULLHCoj8k_nFx5B7N8_AFE58hB9QikAwY7cyJCi0FI/edit?usp=sharing"> ppt link here </a>
   
   
 ## Table of Contents:
@@ -34,17 +25,14 @@ Our Blockchain based solution will offer:
   1)React (Javascript,HTML,CSS)
   2)Ethereum Smart Contracts
   3)Solidity
+  4)Truffle Suite
+  5)Ganache
   
 
 ## Contributors:
-
-Team Name: OP Squad
 
 * [Atharva Kale](https://github.com/atharvakale31)
 * [Diksha Rajguru](https://github.com/diksharajguru)
 * [Muskan Agarwal](https://github.com/muskan-1234)
 * [Supriy Jinturkar](https://github.com/Supriy0498)
 
-
-### Made at:
-<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a> 
