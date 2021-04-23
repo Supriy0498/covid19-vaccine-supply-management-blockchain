@@ -17,7 +17,7 @@ import MLogin from "../MLogin"
 import LoginBenef from "../LoginBenef"
 import MedicalCenterReg from "../medicalcenterReg";
 import Vprovider from '../Vprovider';
-
+import Line from '../Line'
 const useStyles = makeStyles({
     root: {
       minWidth: 275
@@ -126,6 +126,7 @@ function Homepage(){
         )()
       }
         </Popup>
+        <Line />
         
         </div>
     );
