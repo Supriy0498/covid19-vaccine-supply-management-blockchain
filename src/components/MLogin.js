@@ -70,8 +70,8 @@ export default function MLogin() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
-          Log In as Medical Center
+        <Typography component="h5" variant="h5">
+          Medical Center
         </Typography>
         <form className={classes.form} noValidate>
           <TextField

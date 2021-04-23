@@ -5,7 +5,9 @@ import MedicalCenterReg from './MedicalCenterHome';
 import Vprovider from './Vprovider';
 import BForm from './BForm';
 import Appoint from './Appoint';
+import Request from './Request';
 import Web3 from 'web3';
+import Homepage from './homepage/Homepage'
 
 import { Vaccine_Benef_ABI, Vaccine_Benef_Address } from '../contractConfig'
 import {
@@ -23,6 +25,7 @@ class App extends Component {
   render() {
 
   return (
+   //  <Request/>
     <Router>
       <Switch>
         <Route exact path="/" component={Header} />
@@ -32,6 +35,7 @@ class App extends Component {
         <Route exact path="/medicalCenter" component={MedicalCenterReg} />
         <Route exact path="/requestVaccine" component={RequestVaccineLot} />
         <Route exact path="/vaccineDose" component={VaccineDose} />
+        <Route exact path="/providerReq" component={Request} />
       </Switch>
     </Router>
   );

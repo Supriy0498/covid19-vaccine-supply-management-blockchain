@@ -118,7 +118,7 @@ function handleOTPChange(e){
        {signIcon && <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>}
-        {sign && <Typography component="h1" variant="h5">
+        {sign && <Typography component="h5" variant="h5">
           Sign in
         </Typography>}
         {otpsent && <Typography component="h5" variant="h5">

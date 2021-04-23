@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import {useHistory} from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   avatar: {
-    margin: theme.spacing(1),
+    //margin: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
@@ -36,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function VLogin() {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     <Container component="main" maxWidth="xs">
@@ -44,7 +46,7 @@ export default function VLogin() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <Typography component="h5" variant="h5">
           Sign in
         </Typography>
         <form className={classes.form} noValidate>
@@ -77,6 +79,7 @@ export default function VLogin() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={()=>history.push('/providerReq')}
           >
             Sign In
           </Button>

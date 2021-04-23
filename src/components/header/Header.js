@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import { ReactComponent as CloseMenu } from "../assets/x.svg";
-import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
 import Popup from "./Popup";
 import Home from "../Home";
-import { Button } from "@material-ui/core";
 import Vprovider from '../Vprovider';
 import BForm from '../BForm';
 import MedicalCenterReg from "../medicalcenterReg";

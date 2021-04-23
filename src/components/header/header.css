@@ -1,7 +1,7 @@
 /*Desktop View*/
 .header {
   display: flex;
-  background: rgb(222, 9, 241);
+  background:#9DACFA;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;

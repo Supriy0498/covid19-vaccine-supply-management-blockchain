@@ -16,9 +16,10 @@ const useStyles = makeStyles({
       }
     },
     gridContainer: {
-        margin:'100px 100px',
+        marginTop:'100px',
+        marginLeft:'100px',
+        marginRight:'auto',
         verticalAlign:'middle',
-        
     },
     gridComp:{
         padding:'0px'
@@ -34,7 +35,7 @@ export default function MedicalCenterHome() {
         <Grid
       container
       spacing={4}
-      className={classes.gridContainer}
+        className={classes.gridContainer}
        justify="center"
        alignItems="center"
        alignContent="center"
